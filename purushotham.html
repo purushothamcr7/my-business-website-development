@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Router Business</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="Business.css">
+</head>
+
+<body>
+  <div id="sectionkio">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#" id="navName">
+          <img src="https://img.freepik.com/premium-vector/3d-realistic-wireless-network-vector-illustration_156780-170.jpg"
+            alt="Bootstrap" width="70" height="64">Routers
+        </a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#home">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="display('section-about')">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#footer">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#products">Products</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </nav>
+    <main>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://pic.tendacn.com/pro_pictures/TX9PRO/bg10.jpg"
+              class="d-block w-100" alt="..." width="100px" height="400px">
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ38kb0L4YovM_9gTq9pTLwZ1XlVYHgF_b0yA&usqp=CAU"
+              class="d-block w-100" alt="..." width="100px" height="400px">
+          </div>
+          <div class="carousel-item">
+            <img src=" https://www.gadgetreview.com/wp-content/uploads/best-router-for-4k-streaming-image.jpg" class="d-block w-100" alt="..."
+              width="100px" height="400px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">Routers</h2>
+
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="background-image: url(https://5.imimg.com/data5/SELLER/Default/2021/6/XU/AG/VJ/43863917/vid-24-500x500.png); background-attachment:scroll; background-size:contain; background-repeat: no-repeat;">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <!-- <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>Earth</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                        <small>3d</small>
+                      </li>
+                    </ul> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="background-image: url('https://5.imimg.com/data5/HP/BM/GLADMIN-32852603/ac5300-tri-band-wifi-gaming-router-500x500.jpg'); background-attachment: scroll; background-repeat: no-repeat; background-size: contain;">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <!-- <h3 class="pt-5 mt-5 mb-4 display-9 lh-1 fw-bold"><br><br> <br> <br><br></h3> -->
+                <!-- <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>Pakistan</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                        <small>4d</small>
+                      </li>
+                    </ul> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="background-image: url('https://www.gizmochina.com/wp-content/uploads/2023/05/669525bf-0ffd-4fa2-ab82-fb484e828265.webp'); background-attachment: scroll; background-repeat: no-repeat; background-size: contain;">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-7 lh-1 fw-bold"><br><br> <br> <br><br></h3>
+                <!-- <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>California</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                        <small>5d</small>
+                      </li>
+                    </ul> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container"
+          style="background-color: rgb(152, 229, 231); color: black; font-weight: 500; font-size: large;">
+          <p>Welcome to Router Hubs - Your Gateway to Seamless Connectivity
+
+            At Router Hubs, we understand the importance of reliable and high-speed internet connectivity in today's
+            digital age. Our range of cutting-edge routers is designed to deliver unparalleled performance, ensuring you
+            stay connected effortlessly.
+
+            Explore Our Featured Routers:
+
+            Ultra-Fast Streaming Router: Experience lag-free 4K streaming and online gaming with our high-performance
+            streaming router. Equipped with advanced technology, it guarantees smooth streaming and uninterrupted gaming
+            sessions.
+
+            Gaming Enthusiast's Choice: Elevate your gaming experience with our tri-band WiFi gaming router. Designed
+            for
+            gamers, this router ensures low latency, high-speed connections, and stable performance, giving you the edge
+            in online battles.
+
+            High-Speed Connectivity for Modern Homes: Our range includes routers that cater to the demands of modern
+            households. With extensive coverage and high-speed connectivity, these routers support multiple devices
+            simultaneously, making them ideal for busy families.
+
+            Why Choose Router Hubs?
+
+            Reliability: Our routers are crafted for reliability, ensuring a stable internet connection for your home or
+            office.
+
+            Performance: Experience blazing-fast speeds and seamless connectivity, even in crowded networks.
+
+            Security: Protect your network with robust security features, keeping your data safe from online threats.
+
+            Easy Setup: User-friendly interfaces and easy installation make setting up your router a breeze, allowing
+            you
+            to get online quickly.
+
+            24/7 Support: Have questions or need assistance? Our dedicated support team is available around the clock to
+            assist you with any queries.
+
+            Stay Connected, Stay Productive:
+
+            Invest in a Router Hub and unlock the full potential of your internet connection. Whether you're a gamer, a
+            movie enthusiast, or a professional working from home, our routers guarantee a seamless online experience.
+            Browse our selection, choose the router that suits your needs, and embrace a world of fast, reliable, and
+            secure internet connectivity.
+
+            Router Hubs - Empowering Your Digital Lifestyle</p>
+
+          <h3>Features</h3>
+          <ul>
+            <li>Wireless Connectivity (Wi-Fi): Routers enable wireless connectivity, allowing devices such as
+              smartphones,
+              laptops, and tablets to connect to the internet without the need for physical cables.</li>
+            <li>Ethernet Ports: Routers typically have multiple Ethernet ports to connect devices via Ethernet cables,
+              providing stable and faster internet connections, especially for devices that require high bandwidth.</li>
+            <li>Dual-Band or Tri-Band Support: Many modern routers support dual-band (2.4 GHz and 5 GHz) or even
+              tri-band
+              connectivity, allowing users to choose the best frequency for their devices. This helps reduce congestion
+              and improve overall network performance.</li>
+            <li>Guest Network: Routers often feature a guest network option, which enables visitors to connect to the
+              internet without accessing the main network. This ensures security and privacy for the primary network.
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="con3" id="products">
+        <h1>Our Products</h1>
+      </div>
+      <div class="album py-5 bg-blue">
+        <div class="container bg-secondary">
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                  src="https://www.vopmart.com/media/catalog/product/cache/fba01159e823484c6e3d091a338cccb0/a/x/ax10000.jpg"
+                  alt="">
+                <div class="card-body">
+                  <h3>Xiaomi AX9000</h3>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"
+                        onclick="display('section-MI')">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2A3PNlAAaiyP61GWqFD9vvHguVengRn9KCbd97yqf4JSrT5G5fQiisK3oEkdEFhRdyAc&usqp=CAU"
+                  alt="">
+                <div class="card-body">
+                  <h3>ASUS RT-AX3000</h3>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"
+                        onclick="display('section-ASUS')">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLhHGwUK36SRYJsqViOUtiKv8LabLcasi4qg&usqp=CAU"
+                  alt="">
+                <h3>MERCUSYS AC1300</h3>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"
+                        onclick="display('section-Mercuyus')">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                  src="https://www.alpha360.in/product-images/825N.jpg/458750000329397095/600x600" alt="">
+                <h3>D-Link DIR-615</h3>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"
+                        onclick="display('section-D-Link')">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                  src="https://m.media-amazon.com/images/I/51We9wiT27L.AC_UF1000,1000_QL80.jpg" alt="">
+                <div class="card-body">
+                  <h3>Netgear R6850</h3>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"
+                        onclick="display('section-Netgear')">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                  src="https://www.vopmart.com/media/catalog/product/cache/ee14c5ab36c97d39d331f867fa3bee63/d/a/dayua-be30.jpg"
+                  alt="">
+                <div class="card-body">
+                  <h3>Huawei AX3 AX3000 </h3>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"
+                        onclick="display('section-Huawei')">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </main>
+  
+  </div>
+
+  <div id="section-about" style="background-color: rgb(130, 227, 101); height: 3000vh;">
+    <h1>About Us</h1>
+    <div class="rout"><img
+        src="https://www.vopmart.com/media/catalog/product/cache/ee14c5ab36c97d39d331f867fa3bee63/d/a/dayua-be30.jpg"
+        alt="" width="900px" height="500px"></div>
+    <div class="container">
+      <p style="font-size: large; font-weight: 800;">The router business involves the manufacturing, selling, and
+        distribution of networking devices known as routers. Routers are essential networking equipment that facilitate
+        the transfer of data packets between computer networks. They play a crucial role in directing internet traffic
+        efficiently, ensuring that data packets reach their intended destinations.In the context of the router business,
+        companies design and produce various types of routers, catering to both consumer and enterprise markets.
+        Consumer routers are typically used in homes and small businesses, providing wireless internet connectivity to
+        multiple devices such as smartphones, laptops, and smart home devices. Enterprise-grade routers, on the other
+        hand, are more robust and capable of handling larger network loads. They are used by businesses, educational
+        institutions, and government organizations to manage complex networks and ensure secure data transmission.Router
+        businesses focus on aspects such as product performance, security features, ease of use, and scalability to meet
+        the diverse needs of their customers. Additionally, advancements in technology have led to the development of
+        advanced routers with features like dual-band and tri-band Wi-Fi, MU-MIMO (Multi-User, Multiple Input, Multiple
+        Output) technology, and enhanced security protocols to protect against cyber threats.Companies in the router
+        business often provide customer support, firmware updates, and networking solutions to help users optimize their
+        network setups. The market for routers is highly competitive, with companies constantly innovating to stay ahead
+        in terms of technology and features, aiming to provide reliable and high-speed internet connectivity to users
+        around the world. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore, veritatis dolores nobis
+        animi voluptatum cumque commodi sed doloribus assumenda ab quae expedita tenetur ipsam aperiam praesentium nulla
+        iusto odit.
+        Fugit a culpa atque. Eos nobis autem tenetur suscipit porro, perferendis soluta sed commodi esse! Optio neque
+        facere harum facilis, omnis voluptas explicabo distinctio, dignissimos nemo aliquam maiores nobis molestiae.
+        Dignissimos numquam ullam, rerum, impedit qui dolorem quam error molestias commodi nam possimus ducimus
+        recusandae atque illum a, sint non doloribus voluptates eveniet. Excepturi voluptatum veniam quos consectetur
+        sequi maiores!
+        Non magnam provident aperiam itaque exercitationem dignissimos id vel inventore rerum! Reiciendis, nihil. Cum
+        libero, eaque numquam ut ea commodi assumenda voluptatum, cupiditate minima omnis neque ipsam magnam sapiente
+        earum.
+        Aspernatur iusto aut illum sit reiciendis consequuntur sunt nam, earum atque magni odio expedita numquam fugit
+        eius fugiat facere a quos consectetur. Dolor officia praesentium doloribus veniam obcaecati iure esse.
+        Omnis quasi voluptas alias eius minima optio! In sint hic consectetur veniam cupiditate itaque vitae et
+        expedita! Repellendus molestiae aliquid maiores expedita magni dignissimos minima. Ullam nam explicabo veniam
+        animi.
+        Laboriosam molestias facilis, in vero aperiam eum. Saepe fugit repudiandae non fugiat officiis possimus. Nihil
+        officia sed reprehenderit quisquam vel? Ab iusto eaque aperiam atque quod aut perferendis voluptatem facilis.
+        Veniam fugiat eaque iste veritatis maiores possimus tenetur ratione. Repellat aliquam vitae omnis perspiciatis
+        sit corrupti sunt culpa qui consequatur, officiis temporibus eos quia! Quibusdam blanditiis facere qui doloribus
+        voluptates.
+        Ut debitis eos aliquam pariatur! Fugit quo debitis iure dolor omnis hic nam dolore, quasi quibusdam voluptas,
+        iste odit error eum, rerum accusamus repellendus? Delectus rem ea placeat? Ratione, sit.
+        Enim quas at nemo, ipsa eligendi facilis ad natus! Ullam tempore, autem nemo cupiditate pariatur odit reiciendis
+        eaque minus doloremque! Quas laudantium tenetur vel blanditiis distinctio beatae repellat expedita Lorem, ipsum
+        dolor sit amet consectetur adipisicing elit. Sit labore non expedita quidem suscipit vel, doloremque debitis ex
+        neque corporis atque corrupti, impedit ipsa unde et nostrum? Illo, placeat quae.Autem non placeat cumque
+        adipisci aspernatur minus sequi quas perferendis. Ab veniam neque dicta quaerat eaque. Minima architecto,
+        obcaecati non tenetur corrupti consequatur voluptas sit voluptatum dicta. Ullam, facilis ab!
+        Soluta voluptates reiciendis cupiditate non vitae sed et possimus fuga veniam mollitia dolore ratione,
+        repellendus quo est delectus porro! Iure, libero? Dolorem qui dolore nisi sapiente harum quo! Aut, vitae!
+        Similique expedita facere a, impedit dolore repudiandae error qui illo! Hic enim amet sed praesentium! Sed
+        nostrum fuga exercitationem. Esse impedit facere expedita corrupti iure ad totam, reprehenderit illum
+        accusantium.
+        Et eos incidunt dolorum deserunt commodi dignissimos, impedit blanditiis sed vero sint maiores nostrum
+        voluptatum minima aspernatur obcaecati a dolor repellat tempora, fugit rerum ducimus temporibus dicta. Eius, sit
+        voluptatibus.
+        Perferendis veniam harum tempora quam mollitia amet sed magnam quod ea officiis earum vitae, cupiditate numquam
+        nemo voluptates ab eveniet cumque laudantium non corporis voluptate architecto temporibus nihil! Praesentium,
+        corporis.
+        Magnam quidem porro doloribus vero architecto numquam impedit beatae cum eligendi magni a earum nam aperiam
+        nobis iure enim, mollitia debitis odit adipisci vitae provident! Minima nisi aspernatur vel delectus.
+        Totam pariatur officia dolorum mollitia nostrum eum itaque? Excepturi, ipsam, eaque ratione ex quibusdam, sunt
+        harum omnis aliquid numquam error suscipit ea ab dolore dicta. Nisi est possimus corporis autem?
+        In quasi, odio pariatur officiis culpa enim? At, mollitia neque numquam ea nostrum omnis nobis dicta dolore
+        facilis in sunt voluptatum natus iure quaerat delectus incidunt accusantium! Dolorem, consectetur saepe?
+        Minima fuga maiores quasi debitis reiciendis! Fugit dolorum necessitatibus quia incidunt a cumque dolore natus
+        at beatae expedita eum est maiores eveniet impedit, corrupti praesentium mollitia sed ab iste dolorem?
+        Nostrum error, dolore repudiandae quisquam deleniti provident laborum consequuntur est necessitatibus adipisci
+        non? Quas voluptatibus nam commodi ipsam neque eligendi ut accusantium ipsa error! Dolorum ducimus sint quidem
+        impedit saepe.
+        Optio sunt eius similique qui fuga quidem suscipit minima officia? Quisquam officiis quos voluptas error
+        repellat ullam nostrum saepe magni illo! Quasi dolor tempora natus itaque ipsam ut error quaerat.
+        Magnam a eveniet nemo unde velit ullam placeat, tenetur, mollitia quia cum quas excepturi quaerat aspernatur
+        explicabo at quasi temporibus hic possimus fugit quod earum? Rem sunt recusandae quibusdam quaerat.
+        Animi maxime, perspiciatis laboriosam neque assumenda, quam facere est impedit vel voluptas repellendus ex quo
+        nam ullam itaque recusandae cumque atque ipsam quis molestiae! Voluptatem eos a neque at ipsam.
+        Similique autem molestiae veritatis beatae officiis tempora nostrum nihil ipsum sed commodi ratione porro
+        provident maxime, incidunt excepturi eos, molestias soluta quidem voluptas quod itaque facere nulla? Quos,
+        quaerat modi!
+        Voluptates nostrum quas similique assumenda, porro repudiandae voluptas libero eligendi vero earum laborum. Quo
+        labore atque, repudiandae vero ipsum omnis quaerat amet rem eaque voluptate molestias similique, cum inventore?
+        Ea?
+        Doloribus quisquam tempora saepe? Quo veniam sunt veritatis laudantium amet magnam id, molestiae aliquam minima
+        unde odit totam facere voluptatum voluptatibus. Nesciunt at quaerat omnis asperiores incidunt, harum unde sequi!
+        Similique, tempora eum magnam repellat fugiat optio quidem dolores iure, obcaecati dolorum illum eligendi alias
+        vero quas quisquam ipsa, eos dolor nemo cupiditate veniam? Ab sequi repellat eveniet vero ratione!
+        Hic obcaecati, id illo ut a aperiam, praesentium autem quia numquam laboriosam laudantium sint aspernatur sequi
+        doloremque mollitia omnis molestiae voluptatum dolore eaque. Laboriosam vero laborum dolor enim exercitationem
+        ipsum.
+        Blanditiis alias laudantium aliquid adipisci, obcaecati amet sint. Sit nam praesentium deleniti molestias, eaque
+        nulla minima at expedita, culpa cumque hic commodi repellat saepe harum maxime, incidunt numquam optio magni!
+        Tenetur nostrum ab, totam ut vitae ducimus culpa laboriosam sequi in dicta, facilis doloribus praesentium
+        aliquid adipisci quas sed aut quisquam. Corporis quasi minima odio mollitia unde, soluta dolore expedita.
+        Illo eum magni fugit, dolore facilis assumenda corporis unde beatae officia blanditiis accusantium labore nisi
+        totam error veniam? Culpa, ut aliquid! Nesciunt veritatis suscipit id quae natus omnis numquam temporibus.
+        Recusandae aspernatur placeat error numquam inventore quos repudiandae cumque. Vel nemo accusamus ipsam quae
+        modi quidem optio et, labore odio illum in voluptas, voluptatibus exercitationem. Aperiam consequuntur neque
+        minus laborum?
+        Consequatur veritatis saepe magnam eaque atque quidem sed non distinctio illo qui accusamus, adipisci blanditiis
+        quae! Amet eligendi dolor illo harum fugit aspernatur alias eum, nam doloribus temporibus facere ipsum.
+        Repudiandae reprehenderit minus consectetur, ipsa laborum, ad natus dolore ullam mollitia et asperiores maiores,
+        aperiam dolorum facere harum ipsam dolorem reiciendis voluptatibus. Culpa quasi voluptate quisquam numquam iste
+        omnis ab!
+        Repellat, nesciunt maxime. Esse ea eum iste praesentium laboriosam dolorem architecto, at vitae? Asperiores et
+        nulla ea dolorum dicta minus quasi cumque id veniam odit sit obcaecati, consequuntur quas quo.
+        Officia excepturi officiis, accusamus earum saepe quos dignissimos necessitatibus consectetur nam error. Iste
+        rem architecto quidem amet sunt, corporis nemo iusto assumenda dolores hic commodi ullam nihil voluptate
+        asperiores molestias.
+        Eius provident voluptatibus asperiores officia aliquam repellendus adipisci eos sapiente. Alias exercitationem,
+        recusandae corporis eveniet labore deleniti quae consectetur porro commodi beatae eius perspiciatis repellendus
+        aperiam pariatur voluptatum rerum voluptates.
+        Nulla, quidem, voluptates voluptatem eaque nesciunt amet atque corrupti autem minus est ab repudiandae
+        consequuntur corporis aspernatur magnam, quisquam tenetur? Enim nemo adipisci culpa quis perferendis deserunt
+        omnis, laborum ipsam.
+        Enim, soluta, quam a inventore molestias voluptatum quis sint, ea nesciunt repellendus sunt facere quasi?
+        Aperiam, alias similique iste fugiat dolorum dolor doloremque quas nihil! Eaque, sint nulla? Repellendus,
+        itaque?
+        Qui a quia soluta minus, dolorem temporibus tenetur aspernatur porro ex maiores nostrum, molestias veniam
+        molestiae esse, hic delectus distinctio? Placeat unde officiis adipisci perferendis assumenda, corrupti
+        temporibus. Ad, dolore!
+        Quam officiis facilis vero saepe rem quidem? Reprehenderit blanditiis ullam quibusdam ex laborum. Nobis,
+        consequuntur impedit, dolorum accusantium voluptate magni quo totam corrupti eos, vitae sint praesentium
+        repellat a suscipit.
+        Fuga quis nihil necessitatibus pariatur sequi. Libero, hic! Sunt consectetur accusantium beatae dignissimos
+        rerum minus mollitia, nam, nesciunt dicta in illum? Et at cumque blanditiis! Dolor quasi soluta quam asperiores!
+        Necessitatibus omnis nesciunt iusto asperiores voluptatibus saepe qui possimus doloribus nihil illo! Tenetur
+        facere cumque possimus at quo, porro perspiciatis molestiae non maxime blanditiis voluptatibus amet id ipsum vel
+        ad!
+        
+        A!
+        Architecto at voluptas adipisci ex est atque nobis delectus minima, nam cumque maiores quos tenetur, ullam
+        molestias laudantium quae fugit. Dicta repellendus eius non corrupti aliquid iusto saepe, cum necessitatibus?
+        Sint dolor incidunt velit recusandae. Cum beatae at accusamus autem explicabo eligendi asperiores, ipsam
+        sapiente. Ea recusandae eum architecto suscipit consectetur? Quo ea possimus repudiandae doloribus, laudantium
+        odit? Suscipit, saepe?
+        Quos est eaque autem incidunt quae. Nemo veritatis saepe tenetur molestias adipisci repudiandae necessitatibus
+        voluptas nihil cum ab obcaecati reprehenderit, sequi sunt dolor, sed labore magni cupiditate inventore corrupti?
+        Recusandae?
+        Veniam, libero harum iste consequatur exercitationem officia eaque saepe adipisci nihil incidunt accusamus?
+        Delectus sequi recusandae consectetur soluta labore dolore eos doloribus quos? Id illo molestias reprehenderit,
+        blanditiis ducimus doloribus.
+        Veritatis facilis quam consectetur, debitis a quasi praesentium nam quas deleniti blanditiis voluptas fuga eaque
+        eius consequatur velit ad magni alias ab molestias. Quia qui quod quidem temporibus sapiente illum.
+        Quos, ex doloremque! Fugit, ex totam? Aut deleniti reprehenderit quos vitae inventore eligendi culpa, magnam
+        quaerat architecto minima doloremque temporibus, harum dolor incidunt! Pariatur placeat neque dolore quisquam
+        cupiditate voluptas.
+        Quaerat rerum nihil aperiam a aliquid, porro repellat ratione voluptatibus voluptas aspernatur possimus impedit
+        maiores eligendi assumenda doloremque animi tempora eius amet nesciunt debitis libero voluptatum. Pariatur earum
+        aspernatur beatae.
+        Voluptate optio laboriosam quis illo vel neque id, fugiat quisquam natus aut quam, ipsa nisi fuga nemo fugit
+        eveniet consequatur dolorum debitis nesciunt placeat a molestiae? Rem laborum alias qui.Quis aspernatur magni
+        porro molestias. Vero eligendi deleniti amet ratione ad sit minus natus quidem doloribus soluta, aliquid
+        explicabo dolores similique fuga maiores, error enim! Laudantium eum debitis earum atque.</p>
+    </div>
+  </div>
+
+  <div id="section-ASUS" class="sec_bg">
+    <div class="card mb-3" style="max-width: 2040px;">
+      <div class="row g-0 ">
+        <div class="col-md-4">
+          <img src="https://5.imimg.com/data5/RD/PI/RG/SELLER-16254184/asus-rt-ac5300-tri-band-wireless-router.jpg"
+            class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h3>ASUS WiFi 6 Router (RT-AX3000) - Dual Band Gigabit Wireless Internet Router, Gaming & Streaming, AiMesh
+              Compatible, Included Lifetime Internet Security, Parental Control, MU-MIMO, OFDMA</h3>
+            <h4>Price:18450/-</h4>
+            <h5>Features</h5>
+            <ul>
+              <li>Reliability</li>
+              <li>Signal Connectivity</li>
+              <li>Fast Transmission of signals</li>
+              <li>Wi-Fi Optimization</li>
+              <li>One Touch App Control</li>
+              <li>QOS, Parental Control</li>
+            </ul>
+            <h5>About This Item</h5>
+            <li>Performance:
+              ASUS ROG routers are known for their high-performance capabilities. They often come equipped with powerful
+              hardware, such as multi-core processors and ample RAM, to handle high network traffic loads. These routers
+              are optimized to deliver low-latency gaming and smooth streaming experiences</li>
+            <li>Gaming Prioritization:
+              One of the key features of ASUS ROG routers is their gaming prioritization technology. These routers often
+              have a feature called QoS (Quality of Service) that allows you to prioritize gaming traffic over other
+              types of data, ensuring that your gaming sessions are lag-free, even when other devices are using the
+              network for bandwidth-intensive activities like streaming or downloading.</li>
+            <li>Customization and Control:
+              ROG routers typically come with a user-friendly interface that allows users to customize various aspects
+              of their network settings. This customization can include creating gaming profiles, setting up custom QoS
+              rules, and optimizing the network for specific gaming platforms or applications.</li>
+            <li>QoS (Quality of Service) Manage and allocate bandwidth as per activity requirements</li>
+            <li>Parental Control-Control time on internet and content on connected devices</li>
+            <li>Improve network speed with Wi-Fi optimization</li>
+            <li>Coverage Area: up to 400 Sqft</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-primary" onclick="display('sectionkio')">back</button>
+
+  </div>
+  <div id="section-MI" class="sec_bg">
+    <div class="card mb-3" style="max-width: 2040px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img
+            src="https://www.vopmart.com/media/catalog/product/cache/fba01159e823484c6e3d091a338cccb0/a/x/ax10000.jpg"
+            class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h3>Original Xiaomi AX9000 WiFi Router WiFi6 Enhanced Edition Tri-Band USB3.0 Wireless Mesh Network Game Acceleration Repeater 12 Antennas(Black)</h3>
+            <h4>Price:36000/-</h4>
+            <h5>Features</h5>
+            <ul>
+              <li>Wi-Fi Optimization</li>
+              <li>One Touch App Control</li>
+              <li>QOS, Parental Control</li>
+            </ul>
+            <h5>About This Item</h5>
+            <ul>
+              <li>2.4 GHz Wi-Fi with up to 300Mbps Speed, Ideal for video streaming and web browsing. ROM : 16MB Nor
+                Flash. Management application : Supports web, iOS, and Android</li>
+              <li>4 High-performance antenna for better speed & coverage. Operating temperature: 0–40°C. Storage
+                temperature:-40–70°C</li>
+              <li>Control your network from Anywhere, Anytime with help of Mi Wi-Fi app</li>
+              <li>QoS (Quality of Service) Manage and allocate bandwidth as per activity requirements</li>
+              <li>Parental Control-Control time on internet and content on connected devices</li>
+              <li>Improve network speed with Wi-Fi optimization</li>
+              <li>Coverage Area: up to 400 Sqft</li>
+              <li>Suitable for 2-4 Devices. Reception sensitivity : 11Mbps: ≤ -85dBm, 54Mbps: ≤ -72dBm, HT20 MCS7: ≤
+                -69dBm, HT40 MCS7: ≤ -66dBm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" onclick="display('sectionkio')">back</button>
+
+  </div>
+  <div id="section-D-Link" class="sec_bg">
+    <div class="card mb-3" style="max-width: 2040px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="https://www.alpha360.in/product-images/825N.jpg/458750000329397095/600x600"
+            class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h3>D-Link DIR-615 Wi-fi Ethernet-N300 Single_band 300Mbps Router, Mobile App Support, Router | AP | Repeater | Client Modes(Black)</h3>
+            <h4>Price:3999/-</h4>
+            <h5>Features</h5>
+            <ul>
+              <li>Guest Mode High-Speed Wireless Networking</li>
+              <li>Dynamic IP Support, Wireless Client Bandwidth Limitation</li>
+              <li>Multiple Operating Modes</li>
+            </ul>
+            <h5>About This Item</h5>
+            <ul>
+              <li>N 300 Mbps wireless Router with high gain Omni Antenna. Dynamic IP (DHCP) : Yes;Support Multiple
+                operating modes: Router | AP | Repeater | Client;Easy Setup: Super simple set-up with the D-Link
+                Assistant Mobile APP Or with intuitive WEB GUI setup wizard.;Advance security with WPA/WPA2 and firewall
+                NAT, SPI, IP Filter, MAC Filter, DMZ, DDos prevention</li>
+              <li>Always up-to-date with latest features / updates with online firmware upgrade;Support advance features
+                like IPv6, TR-069, VLAN, static Routing etc.;Wireless Guest zone for visitors and wireless client
+                bandwidth limitation;3 years Brand Warranty;N 300 Mbps wireless Router with high gain Omni Antenna.
+                Dynamic IP (DHCP) : Yes;Support Multiple operating modes: Router | AP | Repeater | Client</li>
+              <li>Control Method: Application;High-Speed Wireless Networking</li>
+              <li>Easy Configuration;Advanced Firewall Features;UPnPSupport;Security Protocol: Wpswpa2-Psk</li>
+              <li>Operating System: Windows 7windows</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" onclick="display('sectionkio')">back</button>
+
+  </div>
+  <div id="section-Mercuyus" class="sec_bg">
+    <div class="card mb-3" style="max-width: 2040px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLhHGwUK36SRYJsqViOUtiKv8LabLcasi4qg&usqp=CAU"
+            class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h3>MERCUSYS AC1300 Wireless Dual Band Gigabit Router Ac12G Wi-Fi WiFi Speed with 4 High Gain External
+              Antennas,Dual_Band,Black,1300 mbps</h3>
+            <h4>Price:2499/-</h4>
+            <h5>Features</h5>
+            <ul>
+              <li>Easily share reliable wireless connection with up to 60 wireless devices, such as phones, tablets, and
+                smart home devices, at the same time. Perfectly cover all network needs whether there is a party in the
+                house or a barbecue in the yard.</li>
+              <li>Wi-Fi Optimization</li>
+              <li>One Touch App Control</li>
+              <li>QOS, Parental Control</li>
+              <li>Reliability</li>
+              <li>Signal Connectivity</li>
+            </ul>
+            <h5>About This Item</h5>
+            <ul>
+              <li>AC1300 Dual Band WiFi —— Speeds of up to 400 Mbps on the 2.4 GHz band and 867 Mbps on the 5 GHz
+                band;Full Gigabit Ports —— Lightning-fast connections for wired devices, including game consoles, PCs,
+                smart TVs, and more</li>
+              <li>Far-Reaching Coverage —— 4× high-gain antennas with Beamforming boost stable connections throughout
+                your home for strong WiFi signals in every corner</li>
+              <li>Higher Network Efficiency —— MU-MIMO technology allows AC12G to communicate with multiple devices at
+                the same time, increasing the overall network throughput</li>
+              <li>Operating System: Windows;Control Method: Application</li>
+              <li>Customization and Control:
+                ROG routers typically come with a user-friendly interface that allows users to customize various aspects
+                of their network settings. This customization can include creating gaming profiles, setting up custom
+                QoS rules, and optimizing the network for specific gaming platforms or applications.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" onclick="display('sectionkio')">back</button>
+
+  </div>
+  <div id="section-Netgear" class="sec_bg">
+    <div class="card mb-3" style="max-width: 2040px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="https://m.media-amazon.com/images/I/51We9wiT27L.AC_UF1000,1000_QL80.jpg"
+            class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h3>Netgear R6850 AC2000 Mbps, WiFi USB Dual Band Gigabit Wall Mount Router (Black)</h3>
+            <h4>Price:4349/-</h4>
+            <h5>Features</h5>
+            <ul>
+              <li>Access Point Mode</li>
+              <li>Wi-Fi Optimization</li>
+              <li>One Touch App Control</li>
+              <li>QOS, Parental Control</li>
+              <li>Reliability</li>
+              <li>Signal Connectivity</li>
+            </ul>
+            <h5>About This Item</h5>
+            <ul>
+              <li>Simple to Use Washing Maschine- Comes with a charger and an automatic button; Add water with detergent
+                and clothes; Wait for six spins till your clothes are clean; No dryer included. Recommended was
+                underwear washer or baby washing machine.</li>
+              <li>Made of Highest Quality - Our mini foldable washing machine is made out of premium safe and non-toxic
+                material; Made out of a unique combination of edible grade silicone and BPA-free plastic; Can be used
+                for many years.</li>
+              <li>Multipurpose Investment - This mini portable washing machine saves both your time and water; Can be
+                used for everything from baby clothes, underwear but even jewelry as well as fruits and vegetables; Load
+                size 4.5LBS.</li>
+              <li>Mini Foldable Portable Washer - Convenient and tiny washing machine; only 4 inches thick; Perfect
+                portable washer for apartments, condos, motor homes, RVs, camping, and more; Wash your clothes whenever
+                and wherever you want.</li>
+              <li>Easy to Store, Foldable, and Lightweight - Our washer is adjustable and can be placed under the table,
+                small washroom, or in a suitcase; Comes with a hand carry and a lid to cover. Great as a camping washing
+                machine.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" onclick="display('sectionkio')">back</button>
+  </div>
+  <div id="section-Huawei" class="sec_bg">
+    <div class="card mb-3" style="max-width: 2040px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img
+            src="https://www.vopmart.com/media/catalog/product/cache/ee14c5ab36c97d39d331f867fa3bee63/d/a/dayua-be30.jpg"
+            class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h1>Huawei AX3 AX3000 Dual Band Wi-Fi Router, WiFi 6 Plus Smart Wi-Fi Router, Wi-Fi Speed up to 3000 Mbps,
+              2.4GHz 5GHz Dual-Band Gigabit Rate Internet Router (Black)</h1>
+            <h4>Price:7999/-</h4>
+            <h5>Featutes</h5>
+            <ul>
+              <li>Dual-Band</li>
+              <li>Guest Mode High-Speed Wireless Networking</li>
+              <li>Dynamic IP Support, Wireless Client Bandwidth Limitation</li>
+              <li>Multiple Operating Modes</li>
+              <li>Wi-Fi Optimization</li>
+              <li>One Touch App Control</li>
+              <li>QOS, Parental Control</li>
+              <li>Reliability</li>
+              <li>Signal Connectivity</li>
+              <li>Fast Transmission of signals</li>
+            </ul>
+            <h5>About This Item</h5>
+            <ul>
+              <li>FAST Wi-Fi PERFORMANCE: 1024-QAM and 160 MHz frequency bandwidth, its theoretical speed can reach up
+                to 3000 Mbps (574 Mbps on a 2.4 GHz band and 2402 Mbps on a 5 GHz band). Enjoy smooth streaming and
+                gaming.</li>
+              <li>Multiple Connections, Smooth Connections: It is capable of connecting up to 128 devices overall on
+                dual bands. Supporting OFDMA multi-user technology, it is capable to send data to multiple devices
+                simultaneously (max. 4 devices on 2.4 GHz, max. 16 devices on 5 GHz).</li>
+              <li>Signal Can Go Through One More Wall: HUAWEI Wi-Fi 6-enabled phones are able to send 6dB stronger
+                signals back to AX3 in stable, 2 MHz narrow bandwidth using Dynamic Narrow Bandwidth technology, which
+                is based on Chipset Synergy. The wireless signals can penetrate solid objects like walls and floors
+                easily.</li>
+              <li>Larger Bandwidth with 160 MHz: As AX3 supports 160 MHz, when connecting AX3 to devices supporting 160
+                MHz, like top-of-the-line HUAWEI Wi-Fi 5-enabled smart phones, tablets and laptops, the internet speed
+                would increase 60% and more.; 30% Reduced Power Consumption: Negotiate wake-up time among connected
+                devices to avoid consuming power while waiting or on standby.</li>
+              <li>Security Protocol: Wps; Control Method: Remote</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" onclick="display('sectionkio')">back</button>
+  </div>
+
+  <div id="footer" class="container">
+    <footer id="footer">
+      <div class="footer">
+          <div class="footer-first">
+              <h3>purushotham Router Business</h3>
+          </div>
+          <div class="footer-second">
+              <h5>For Any Queries:</h5>
+              <p>Mail To:purushothamjcr7@gmail.com</p>
+          </div>
+  
+      </div>
+      <div class="footer-rights" id="contact">
+          copyrights &#169; purushotham Router Hub.com | All rights reserved
+      </div>
+  </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript"
+    src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+</body>
+
+</html>
